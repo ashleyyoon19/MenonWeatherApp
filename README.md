@@ -8,3 +8,13 @@ How to test:
 5. Add your input and press enter 
 6. You will now see the filtered table by the day number you entered
 <img width="708" alt="Screen Shot 2021-03-17 at 4 53 18 PM" src="https://user-images.githubusercontent.com/60761499/111459870-48446d00-8741-11eb-97e9-d45530ebd88d.png">
+
+Resources/documentation/calls used:
+
+[Using API](https://www.youtube.com/watch?v=lcWfSn6-m_8&ab_channel=siddheshkadam)
+
+[Data Visualization](https://towardsdatascience.com/weather-data-and-forecasts-from-open-weather-api-1636691d5ba)
+
+[OpenWeatherMap API](https://openweathermap.org/api/one-call-api#parameter)
+
+[IPData API](https://ipdata.co/)
