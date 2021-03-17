@@ -59,3 +59,33 @@ weather_df['Wind Speed']=wind_speed
 weather_df['Description']=weather_desc
 
 print(weather_df)
+
+day_val = input("Enter the day number you want to filter the results by (0 - 7):")
+
+'''
+pd.set_option('display.max_columns', None)
+weather_df_filtered=pd.DataFrame()
+
+
+#putting data into dataframe
+weather_df_filtered['Day']=day_val
+weather_df_filtered['Min. Temp (ºC)']= min_temp[int(day_val)]
+weather_df_filtered['Max. Temp (ºC)']= max_temp[int(day_val)]
+weather_df_filtered['Humidity']= humidity[int(day_val)]
+weather_df_filtered['Wind Speed']= wind_speed[int(day_val)]
+weather_df_filtered['Description']= weather_desc[int(day_val)]
+'''
+
+filtered = {'Day' : [day_val],
+        'Min. Temp (ºC)' : [min_temp[int(day_val)]],
+        'Max. Temp (ºC)' : [max_temp[int(day_val)]],
+        'Humidity' : [humidity[int(day_val)]],
+        'Wind Speed' : [wind_speed[int(day_val)]],
+        'Description' : [weather_desc[int(day_val)]]
+        }
+
+weather_df_filtered = pd.DataFrame(filtered, columns = ['Day', 'Min. Temp (ºC)', 'Max. Temp (ºC)', 'Humidity', 'Wind Speed', 'Description'])
+
+print("Your filtered table is:")
+print(weather_df_filtered)
+
